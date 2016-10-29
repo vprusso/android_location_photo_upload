@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <FrameLayout
+      android:id="@+id/frameLayout"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginBottom="8dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      app:layout_constraintBottom_toTopOf="@+id/tvUserLongitude"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      >
+
+    <ImageView
+        android:id="@+id/ivImageToUpload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/picture_frame"
+        android:contentDescription="@string/cont_desc_upload_image"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/choose_picture"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        />
+
+  </FrameLayout>
+
+
+  <ImageButton
+      android:id="@+id/ivCaptureImage"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_marginBottom="4dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="4dp"
+      android:contentDescription="@string/cont_desc_choose_image"
+      android:src="@android:drawable/ic_menu_camera"
+      app:layout_constraintBottom_toTopOf="@+id/bUploadImage"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+      />
+
+  <TextView
+      android:id="@+id/tvLongitude"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:layout_marginStart="16dp"
+      android:text="@string/longitude"
+      app:layout_constraintBottom_toTopOf="@+id/tvLatitude"
+      app:layout_constraintLeft_toLeftOf="parent"
+      />
+
+  <TextView
+      android:id="@+id/tvUserLongitude"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:layout_marginStart="16dp"
+      app:layout_constraintBottom_toTopOf="@+id/tvLatitude"
+      app:layout_constraintLeft_toRightOf="@+id/tvLongitude"
+      tools:text="DefaultLongitude"
+      />
+
+  <TextView
+      android:id="@+id/tvLatitude"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:layout_marginStart="16dp"
+      android:layout_weight="1"
+      android:text="@string/latitude"
+      app:layout_constraintBottom_toTopOf="@+id/bUploadImage"
+      app:layout_constraintLeft_toLeftOf="parent"
+      />
+
+  <TextView
+      android:id="@+id/tvUserLatitude"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_weight="0"
+      app:layout_constraintBottom_toBottomOf="@+id/tvLatitude"
+      app:layout_constraintLeft_toRightOf="@+id/tvLatitude"
+      tools:text="DefaultLatitude"
+      />
+
+  <Button
+      android:id="@+id/bUploadImage"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginStart="16dp"
+      android:text="@string/upload_image"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      />
+
+
+</android.support.constraint.ConstraintLayout>

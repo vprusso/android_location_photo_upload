@@ -3,4 +3,12 @@
     <string name="upload_image">Upload Image</string>
     <string name="latitude">Latitude:</string>
     <string name="longitude">Longitude:</string>
+    <string name="cont_desc_upload_image">upload image</string>
+    <string name="perm_take_pics">Take Could Pictures</string>
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+    <string name="perm_get_pics">Get Pictures From Storage</string>
+    <string name="perm_get_location">Get Location Coordinates</string>
+    <string name="choose_picture">Click Here To Choose A Picture</string>
+    <string name="cont_desc_choose_image">Choose Image</string>
 </resources>
